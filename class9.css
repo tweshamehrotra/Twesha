@@ -1,0 +1,46 @@
+.btn{
+    height:100px;
+    width:100px;
+    background-color: green;
+    color: white;
+}
+    /* transition properties can be applied anywhere not only in pseudo class*/
+.btn:focus{
+    height:150px;
+    width:150px;
+    background-color: red;
+    color:white;
+    transition-delay: 2s;
+    transition-duration: 4s ;  /*how much time  it will take to go  from one state/transition to another*/
+    transition-property: height ;  /*which property's transition you want to see*/
+
+}
+
+.parent{
+    width:500px;
+    height: 500px;
+    border: 4px solid red;
+    padding: 10px;
+   
+}
+
+.child{
+    width:200px;
+    height:200px;
+    background-color: rebeccapurple;
+}
+
+.child:focus{
+    background-color: sandybrown;
+    border-radius: 60%;
+    transform:translateY(150%);  /*Y-axis; 200px or 200% or anything it is basically distance 
+                                    note: in this, the parent height(for y) and width(for x) matters ie,
+                                    if parent height=600px then translateY(200%) is its extreme
+                                     and translateY(100%)is mid.
+                                     similarly,if height=500px then y(150%) is its extreme/end*/
+
+
+                                    
+     transition: 3s ease-in-out;  /*without ease in out also same working,its by default*/
+
+}

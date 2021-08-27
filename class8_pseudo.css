@@ -1,0 +1,36 @@
+/* PSEUDO CLASSES */
+
+.btn{
+    background-color: violet;
+    color: black;
+}
+.btn:hover{
+    background-color: chocolate;
+    color:darkblue;
+}
+.btn:active{
+    background-color: darkgreen;
+    color:darkkhaki;
+}
+.btn:focus{  /*after user clicks on element*/
+    background-color: darkslateblue;
+    color: floralwhite;
+
+}
+
+/* PSUEDO ELEMENTS: */
+
+.para::before{          /*used to add specific html content before the dom renders your content.
+                              Reduces the need to write extra html tags only for styling purpoose*/
+        content:"My Name is: ";
+        color:lightseagreen
+}
+.para::after{               /*Before and after elements cannot be copies its kinda
+                             embedded(check:selection element)*/
+    content:"  MEHROTRA";
+        color:green;
+
+}
+.para::selection{
+    background-color: hotpink;
+}

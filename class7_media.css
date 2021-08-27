@@ -1,0 +1,38 @@
+.mobile{
+    display:block;
+    background-color: greenyellow;
+    font-size: 20px;
+}
+.tablet{
+    display:none;
+}
+.laptop{
+    display:none;
+}
+
+/* we have given 768px since max size of phone is 768px after that a tablet range starts ie,
+min size of tablet is 768px and max size of mobile is 768px  */
+@media(min-width:768px){ 
+    .mobile{
+        display:none;
+        }  
+    .tablet{
+        display:block;
+        background-color: yellow;
+        font-size:40px;
+    }
+}
+
+@media(min-width:1024px){
+    .mobile{
+        display:none;
+    }
+    .tablet{
+        display:none;
+    }
+    .laptop{
+        display:block;
+        background-color: hotpink;
+        font-size:60px;
+    }
+}

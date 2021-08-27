@@ -1,0 +1,28 @@
+body{
+    background-color: lime;
+    padding:50px;
+}
+.parent{
+    background-color: lightgreen;
+    width:100%;
+     height:500px; /*if there are many child divs, we can give height:100% for it to cover all the
+                   child div elements*/
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start; /*wrt x axis*/
+     gap:5px;   /*gap gives space between boxes not top bottom*/
+     /* flex-wrap: wrap; for images etc. it allows flex to break line */
+     align-items: center; /*wrt y axis*/
+}
+.child{
+    background-color: lightseagreen;
+    width:300px;
+    height:300px;
+}
+
+.child1{
+    background-color: lightseagreen;
+    width:300px;
+    height:300px;
+    align-self: flex-start;
+}
